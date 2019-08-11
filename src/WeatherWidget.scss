@@ -1,6 +1,47 @@
 .weather-widget {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   text-align: center;
-  background-color: lightsteelblue;
+  position: relative;
+  .location {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(270deg,#2fcdc9 0%,#188194 90%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 100;
+    h1 {
+      text-transform: uppercase;
+    }
+  }
+  .subheading {
+    position: relative;
+    margin: 140px 0 20px;
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 900px;
+    margin: 0 auto;
+    .card {
+      background-color: #fff;
+      border-radius: 5px;
+      border: 1px solid #c3c3c3;
+      box-shadow: 3px 3px darkgrey;
+      padding: 15px;
+      margin: 20px;
+      width: 200px;
+      p:nth-of-type(1) {
+        padding: 5px 0;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+    }
+  }
 }
