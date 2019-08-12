@@ -20,4 +20,5 @@ A small, reusable widget that allows the user to see the weather forecast for th
 1. Render the results arranged by day of week.
 2. Allow the user to search for a specific location.
 3. Show a larger graphic to display current weather.
-4. Add more data available from https://openweathermap.org/.
+4. Host application on github-pages.
+5. Add more data available from https://openweathermap.org/.
